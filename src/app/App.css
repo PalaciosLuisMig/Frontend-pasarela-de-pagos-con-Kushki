@@ -1,0 +1,229 @@
+
+:root {
+    /*  Anchura máxima del contenido en desktop */
+    --max-width : 1200px;
+
+    /*Paleta de colores*/
+    --primary-color-100: #E7F4FD;
+    --primary-color-200: #B7DEFA;
+    --primary-color-300: #88C8F7;
+    --primary-color-400: #58B3F3;
+    --primary-color-500: #1192EE;
+    --primary-color-600: #1083D5;
+    --primary-color-700: #0C66A6;
+    --primary-color-800: #094977;
+    --primary-color-900: #052C48;
+
+    --second-color-100: #FFF8EB;
+    --second-color-200: #FFEAC7;
+    --second-color-300: #FFDB9E;
+    --second-color-400: #FFCE7A;
+    --second-color-500: #FFBA42;
+    --second-color-600: #E5A638;
+    --second-color-700: #B4822D;
+    --second-color-800: #7E5C20;
+    --second-color-900: #4E3813;
+
+    --green-color-500: rgb(0, 230, 178);
+    --red-color-500: #EB5656;
+
+    --grey-color-100: #FBFBFE;
+    --grey-color-200: #FCFCFC;
+    --grey-color-300: #EFF3F5;
+    --grey-color-400: #C8CDD0;
+    --grey-color-500: #A0A7AC;
+    --grey-color-600: #697477;
+    --grey-color-700: #2A3B47;
+    --grey-color-800: #22303A;
+    --grey-color-900: #1A252D;
+
+    /*  Colores  */
+    --primary-color     : var(--primary-color-500);
+    --primary-color-alt : var(--primary-color-600);
+    --title-color       : var(--primary-color);
+    --text-color        : var(--grey-color-600);
+    --body-bg-color     : var(--grey-color-100);
+    --white-color       : #ffffff;
+    --color             : var(--primary-color);
+    --color-alt         : var(--primary-color-alt);
+
+    /* Otros */
+    --border-radius : 0.5rem;
+    --box-shadow    : 0 2px 2px rgba(36, 47, 66, 0.1);
+}
+
+body{
+    color: var(--primary-color-100);
+}
+
+h3{
+    text-align: center;
+    color: var(--primary-color-100);
+    padding: .2rem 0 1.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.mainApp{
+    margin-top: -50px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.contentWrapper{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color-200);
+    background-color: var(--primary-color-600);
+}
+
+.logo{
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.3rem;
+    border: 1px solid var(--primary-color-800);
+    width: auto;
+    font-size: inherit;
+}
+
+.formDateExpiryCVC{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-bottom: 20px;
+}
+
+.formDateExpiryCVC input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.3rem;
+    border: 1px solid var(--primary-color-800);
+    text-align: center;
+    width: 72%;
+}
+
+.itemDateExpiyCVC {
+    text-align: center;
+}
+
+.paymentForm button{
+    background-color: var(--green-color-500);
+    color: var(--primary-color-100);
+    font-size: medium;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: 700;
+    border: 1px solid var(--primary-color-100);
+}
+
+.paymentForm button:hover{
+    background-color: #2dd280c7;
+}
+
+.contentBtnTest{
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color-200);
+    background-color: var(--primary-color-600);
+}
+
+.contentBtnTest button{
+    background-color: var(--primary-color-800);
+    color: var(--primary-color-100);
+    font-size: medium;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 0.25rem 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contentBtnTest button:hover{
+    background-color: var(--primary-color-900);
+}
+
+.contentBtnTest p{
+    margin-bottom: 0.5rem;
+}
+
+.textRed{
+    color:rgb(207, 6, 6);
+}
+
+.marginTop1rem{
+    margin-top: 1rem;
+}
+
+.success {
+    align-items: center;
+}
+
+.success p:first-child{
+    margin-bottom: 2.5rem;
+}
+.success p:nth-child(6){
+    margin-bottom: 2.5rem;
+}
+
+.success p{
+    margin-bottom: 1rem;
+}
+
+.success-icon {
+    color: rgb(253, 253, 253);
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.success-title{
+    color: var(--second-color-500);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.success .contentBtnTest{
+    border: none;
+}
+
+.success .contentBtnTest button{
+    padding: 14px 16px;
+}

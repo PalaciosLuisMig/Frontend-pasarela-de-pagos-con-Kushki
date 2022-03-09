@@ -2,7 +2,7 @@
   "name": "frontend-kushki",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://palaciosluismig.github.io/frontend-kushki/",
+  "homepage": "https://palaciosluismig.github.io/frontend-kushki",
   "dependencies": {
     "@kushki/js": "^1.18.2",
     "@testing-library/jest-dom": "^5.16.2",

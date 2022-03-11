@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "61081505981c358d8897",
+    "revision": "40f7edad77eb84bb5912",
     "url": "/frontend-kushki/static/css/main.94f6ba72.chunk.css"
   },
   {
-    "revision": "61081505981c358d8897",
-    "url": "/frontend-kushki/static/js/main.61081505.chunk.js"
+    "revision": "40f7edad77eb84bb5912",
+    "url": "/frontend-kushki/static/js/main.40f7edad.chunk.js"
   },
   {
     "revision": "1db871dbf7f551720675",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/frontend-kushki/static/js/runtime~main.a7884c4c.js"
   },
   {
-    "revision": "be37fb884b7af0434429d84a846ade20",
+    "revision": "db3e085dab17ba2baf4f5e47446ee963",
     "url": "/frontend-kushki/index.html"
   }
 ];

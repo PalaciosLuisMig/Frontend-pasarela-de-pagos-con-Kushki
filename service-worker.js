@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/frontend-kushki/precache-manifest.b56f1fc586d0307ec32aaeae4c2ba2e3.js"
+  "/frontend-kushki/precache-manifest.16ac938bf4641c2697686afe2f08aa28.js"
 );
 
 workbox.clientsClaim();

@@ -8,7 +8,7 @@ const chargeAmount = 49.99;
 const chargeCurrency = "USD";
 
 // My merchant id
-const MERCHANT_ID = process.env.MERCHANT_ID;
+const MERCHANT_ID = process.env.REACT_APP_MERCHANT_ID;
 
 // Test Cards
 const testCards = {
@@ -83,7 +83,7 @@ const App = () => {
           setToken(response.token);
           
           axios
-            .post("http://localhost:8080/api/cards", {
+            .post("https://backend-kushki.herokuapp.com/api/cards", {
               amount: chargeAmount,
               token: response.token,
             })

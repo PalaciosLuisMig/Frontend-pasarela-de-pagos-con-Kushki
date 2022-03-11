@@ -6,9 +6,11 @@ import "./App.css";
 
 const chargeAmount = 49.99;
 const chargeCurrency = "USD";
-//const MERCHANT_ID = "20000000100177388000";
-const MERCHANT_ID = "20000000106212540000"
 
+// My merchant id
+const MERCHANT_ID = process.env.MERCHANT_ID;
+
+// Test Cards
 const testCards = {
   approved: {
     cardNumber: "5451 9515 7492 5480",
@@ -33,11 +35,12 @@ const testCards = {
   }
 };
 
+// App
 const App = () => {
 
   const kushki = new Kushki({
     merchantId: MERCHANT_ID,
-    inTestEnvironment: true
+    inTestEnvironment: true,
   });
 
   const [data, setData] = useState({
@@ -80,7 +83,7 @@ const App = () => {
           setToken(response.token);
           
           axios
-            .post("https://kushki-backend-examples.vercel.app/api/cards", {
+            .post("http://localhost:8080/api/cards", {
               amount: chargeAmount,
               token: response.token,
             })
